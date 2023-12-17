@@ -14,85 +14,107 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <body>
-    <div class="all">
-      <div class="block">
-        <img class="logo" src="./img/Logo (1).png" alt="" />
-        <h1 class="heading">For Individuals</h1>
-        <p class="para">
-          Start benefiting from the wellness experience. For <br />
-          companies looking on increasing productivity, and improving <br />
-          organization wellness.
+    <header>
+      <img src="image/Logo (2).png" alt="logo" id="logo" />
+      <div class="heading">
+        <h2>For Individuals</h2>
+
+        <p class="txt-sm">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+
+        <p class="txt_lg">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
         </p>
       </div>
-      <div class="all-2">
-        <div class="signup p-5">
-          <div class="fir-las">
-            <div class="first-div">
-              <p class="first-name">First Name</p>
-              <!-- <input type="text" placeholder="Tolu"> -->
-              <div class="name"><p class="tolu">Tolu</p></div>
-            </div>
-            <div class="last-div">
-              <p class="first-name">Last Name</p>
-              <div class="name-2"></div>
-            </div>
+    </header>
+
+    <div class="form">
+      <form action="">
+        <div class="dta_1">
+          <div class="form-control">
+            <label for="firstName">First Name</label><br />
+            <input
+              type="text"
+              name="firstName"
+              class="form-input"
+              placeholder="Tolu"
+            />
           </div>
-          <div class="all-gender">
-            <div class="first-div">
-              <p class="first-name">Gender</p>
-              <div class="name-2">
-                <div class="alldown">
-                  <p class="tolu-2">Select here</p>
-                  <img class="down" src="./img/u_angle-down.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="first-div">
-              <p class="first-name">Date of Birth</p>
-              <div class="name-2">
-                <div class="alldown">
-                  <p class="tolu-2">Select here</p>
-                  <img class="down" src="./img/u_a_calendar-alt.svg" alt="" />
-                </div>
-              </div>
-            </div>
+          <div class="form-control">
+            <label for="lastName">Last Name</label><br />
+            <input type="text" name="lastName" class="form-input" />
           </div>
-          <div class="fir-las">
-            <div class="last-div">
-              <p class="first-name">Weight (KG)</p>
-              <div class="name-2"><p class="tolu-2">Enter Weight</p></div>
-            </div>
-            <div class="last-div">
-              <p class="first-name">Height (CM)</p>
-              <div class="name-2"><p class="tolu-2">Enter height here..</p></div>
-            </div>
-          </div>
-          <div class="first-div">
-            <p class="first-name">Activity Level</p>
-            <div class="name-3">
-              <div class="alldown">
-                <p class="tolu-2">Select here</p>
-                <img class="down-2" src="./img/u_angle-down.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="first-div">
-            <p class="first-name">Password</p>
-            <div class="name-3">
-              <div class="alldown">
-                <img class="down-3" src="./img/show.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="register"><p class="regis">Register</p></div>
-          <p class="click">
-            By clicking Register, you agree to our
-            <span class="terms">Terms of Use</span> and our
-            <span class="terms"> Privacy Policy </span>
-          </p>
-          <!-- end -->
         </div>
-      </div>
+
+        <div class="dta_2">
+          <div class="form-control">
+            <label for="gender">Gender</label><br />
+            <select name="gender" id="gender">
+              <option value="Select here">Select here</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="dob">Date of Birth</label><br />
+            <input
+              type="date"
+              name="dob"
+              class="form-input"
+              id="dob"
+              data-placeholder="select here"
+              required
+              aria-required="true"
+            />
+          </div>
+        </div>
+
+        <div class="dta_3">
+          <div class="form-control">
+            <label for="weight">Weight (KG)</label><br />
+            <input
+              type="number"
+              placeholder="Enter Weight"
+              class="form-input"
+            />
+          </div>
+          <div class="form-control">
+            <label for="weight">Height (CM)</label><br />
+            <input
+              type="number"
+              placeholder="Enter height here.."
+              class="form-input"
+            />
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="activityLevel">Activity Level</label><br />
+          <select name="activityLevel" id="activityLevel">
+            <option class="opt-placeholder" value="Select here">
+              Select here
+            </option>
+            <option value="">.</option>
+            <option value="">..</option>
+          </select>
+        </div>
+        <div class="form-ctr">
+          <label for="password">Password</label><br />
+          <input type="password" id="password" class="form-input" />
+          <i class="far fa-eye-slash"></i>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+
+      <footer>
+        <p class="footer">
+          By clicking Register, you agree to our
+          <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
